@@ -1,0 +1,6 @@
+FROM httpd
+FROM nginx
+WORKDIR /devops
+ADD . /devops
+RUN echo " copying httpd and nginx" >> README.txt
+COPY README.txt /devops/README.txt

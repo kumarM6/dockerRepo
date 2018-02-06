@@ -1,0 +1,5 @@
+FROM lephare/apache
+WORKDIR devops
+ADD . devops
+RUN apt-get update
+
